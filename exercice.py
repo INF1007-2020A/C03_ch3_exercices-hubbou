@@ -13,7 +13,7 @@ def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float
     # degree / 360 = radians / 2pi
     # rad = pi deg / 180
 
-    deg = angle_degs + (angle_mins + angle_secs * 60)
+    deg = angle_degs + (angle_mins + angle_secs * 60) * 60
     return angle_degs
 
 
