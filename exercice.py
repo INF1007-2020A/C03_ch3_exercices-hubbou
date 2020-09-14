@@ -19,6 +19,7 @@ def to_degrees(angle_rads: float) -> tuple:
     deg = 360 * angle_rads / (2 * math.pi)
     # deg (float -> int), Obtenir min (float)
     deg, min = deg // deg, (deg % deg) * 60
+    # min (float -> int), O
     deg = deg // deg
 
     return 0.0, 0.0, 0.0
