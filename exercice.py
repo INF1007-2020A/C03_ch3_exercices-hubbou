@@ -15,8 +15,9 @@ def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float
 
 def to_degrees(angle_rads: float) -> tuple:
     # 2pi radians = 360 degree
-    # 
+    # Obtenir deg (float)
     deg = 360 * angle_rads / (2 * math.pi)
+    # 
     deg, min = deg // deg, (deg % deg) * 60
     deg = deg // deg
 
