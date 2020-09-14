@@ -17,12 +17,12 @@ def to_degrees(angle_rads: float) -> tuple:
     # 2pi radians = 360 degree
     # Obtenir deg (float)
     deg = 360 * angle_rads / (2 * math.pi)
-    # deg (float -> int), Obtenir min (float)
+    # deg (float -> int), Get min (float)
     deg, min = deg // deg, (deg % 1) * 60
-    # min (float -> int), Obtenir sec (float)
+    # min (float -> int), Get sec (float)
     min, sec = min // min, (min % 1) * 60
 
-    return 0.0, 0.0, 0.0
+    return deg, min, sec
 
 
 def to_celsius(temperature: float) -> float:
